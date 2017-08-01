@@ -1,0 +1,767 @@
+  System.ComponentModel.DataAnnotations.Resources.DataAnnotationsResources.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly System.ComponentModel.DataAnnotations, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35: 
+	hash=SHA1, flags=PublicKey
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class System.ComponentModel.DataAnnotations.AssociatedMetadataTypeTypeDescriptionProvider: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.TypeDescriptionProvider
+    Void .ctor(System.Type): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Type, System.Type): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetTypeDescriptor(Type, Object): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.DataAnnotations.AssociatedMetadataTypeTypeDescriptor: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :System.ComponentModel.CustomTypeDescriptor
+    Void .ctor(System.ComponentModel.ICustomTypeDescriptor, System.Type, System.Type): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    GetProperties(Attribute[]): PrivateScope, Public, Virtual, HideBySig
+    GetProperties(): PrivateScope, Public, Virtual, HideBySig
+    GetAttributes(): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.DataAnnotations.AssociationAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(System.String, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Name 'get ' : 
+    System.String ThisKey 'get ' : 
+    System.String OtherKey 'get ' : 
+    Boolean IsForeignKey 'get set' : 
+    System.Collections.Generic.IEnumerable`1[System.String] ThisKeyMembers 'get ' : 
+    System.Collections.Generic.IEnumerable`1[System.String] OtherKeyMembers 'get ' : 
+  Methods:
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    get_ThisKey(): PrivateScope, Public, HideBySig, SpecialName
+    get_OtherKey(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsForeignKey(): PrivateScope, Public, HideBySig, SpecialName
+    set_IsForeignKey(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ThisKeyMembers(): PrivateScope, Public, HideBySig, SpecialName
+    get_OtherKeyMembers(): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.DataAnnotations.BindableTypeAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean IsBindable 'get set' : 
+  Methods:
+    get_IsBindable(): PrivateScope, Public, HideBySig, SpecialName
+    set_IsBindable(Boolean): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.DataAnnotations.Schema.ColumnAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Name 'get ' : 
+    Int32 Order 'get set' : 
+    System.String TypeName 'get set' : 
+  Methods:
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    get_Order(): PrivateScope, Public, HideBySig, SpecialName
+    set_Order(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_TypeName(): PrivateScope, Public, HideBySig, SpecialName
+    set_TypeName(String): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.DataAnnotations.ValidationAttribute: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  :System.Attribute
+  Properties:
+    Boolean CustomErrorMessageSet 'get set' : 
+    Boolean RequiresValidationContext 'get ' : 
+    System.String ErrorMessage 'get set' : 
+    System.String ErrorMessageResourceName 'get set' : 
+    System.Type ErrorMessageResourceType 'get set' : 
+  Methods:
+    get_CustomErrorMessageSet(): PrivateScope, Assembly, HideBySig, SpecialName
+    get_RequiresValidationContext(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ErrorMessage(): PrivateScope, Public, HideBySig, SpecialName
+    set_ErrorMessage(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ErrorMessageResourceName(): PrivateScope, Public, HideBySig, SpecialName
+    set_ErrorMessageResourceName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ErrorMessageResourceType(): PrivateScope, Public, HideBySig, SpecialName
+    set_ErrorMessageResourceType(Type): PrivateScope, Public, HideBySig, SpecialName
+    FormatErrorMessage(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    IsValid(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetValidationResult(Object, ValidationContext): PrivateScope, Public, HideBySig
+    Validate(Object, String): PrivateScope, Public, HideBySig
+    Validate(Object, ValidationContext): PrivateScope, Public, HideBySig
+Class System.ComponentModel.DataAnnotations.CompareAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.DataAnnotations.ValidationAttribute
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String OtherProperty 'get set' : 
+    System.String OtherPropertyDisplayName 'get set' : 
+    Boolean RequiresValidationContext 'get ' : 
+  Methods:
+    get_OtherProperty(): PrivateScope, Public, HideBySig, SpecialName
+    get_OtherPropertyDisplayName(): PrivateScope, Public, HideBySig, SpecialName
+    set_OtherPropertyDisplayName(String): PrivateScope, Assembly, HideBySig, SpecialName
+    FormatErrorMessage(String): PrivateScope, Public, Virtual, HideBySig
+    get_RequiresValidationContext(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Class System.ComponentModel.DataAnnotations.Schema.ComplexTypeAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class System.ComponentModel.DataAnnotations.ConcurrencyCheckAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class System.ComponentModel.DataAnnotations.DataTypeAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.DataAnnotations.ValidationAttribute
+    Void .ctor(System.ComponentModel.DataAnnotations.DataType): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.ComponentModel.DataAnnotations.DataType DataType 'get set' : 
+    System.String CustomDataType 'get set' : 
+    System.ComponentModel.DataAnnotations.DisplayFormatAttribute DisplayFormat 'get set' : 
+  Methods:
+    get_DataType(): PrivateScope, Public, HideBySig, SpecialName
+    get_CustomDataType(): PrivateScope, Public, HideBySig, SpecialName
+    GetDataTypeName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_DisplayFormat(): PrivateScope, Public, HideBySig, SpecialName
+    IsValid(Object): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.DataAnnotations.CreditCardAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.ComponentModel.DataAnnotations.DataTypeAttribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    IsValid(Object): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.DataAnnotations.CustomValidationAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.ComponentModel.DataAnnotations.ValidationAttribute
+    Void .ctor(System.Type, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Type ValidatorType 'get ' : 
+    System.String Method 'get ' : 
+    System.Object TypeId 'get ' : 
+  Methods:
+    get_ValidatorType(): PrivateScope, Public, HideBySig, SpecialName
+    get_Method(): PrivateScope, Public, HideBySig, SpecialName
+    get_TypeId(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    FormatErrorMessage(String): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption DatabaseGeneratedOption 'get set' : 
+  Methods:
+    get_DatabaseGeneratedOption(): PrivateScope, Public, HideBySig, SpecialName
+Struct System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption None = 0 : Public, Static, Literal, HasDefault
+    System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption Identity = 1 : Public, Static, Literal, HasDefault
+    System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption Computed = 2 : Public, Static, Literal, HasDefault
+Struct System.ComponentModel.DataAnnotations.DataType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    System.ComponentModel.DataAnnotations.DataType Custom = 0 : Public, Static, Literal, HasDefault
+    System.ComponentModel.DataAnnotations.DataType DateTime = 1 : Public, Static, Literal, HasDefault
+    System.ComponentModel.DataAnnotations.DataType Date = 2 : Public, Static, Literal, HasDefault
+    System.ComponentModel.DataAnnotations.DataType Time = 3 : Public, Static, Literal, HasDefault
+    System.ComponentModel.DataAnnotations.DataType Duration = 4 : Public, Static, Literal, HasDefault
+    System.ComponentModel.DataAnnotations.DataType PhoneNumber = 5 : Public, Static, Literal, HasDefault
+    System.ComponentModel.DataAnnotations.DataType Currency = 6 : Public, Static, Literal, HasDefault
+    System.ComponentModel.DataAnnotations.DataType Text = 7 : Public, Static, Literal, HasDefault
+    System.ComponentModel.DataAnnotations.DataType Html = 8 : Public, Static, Literal, HasDefault
+    System.ComponentModel.DataAnnotations.DataType MultilineText = 9 : Public, Static, Literal, HasDefault
+    System.ComponentModel.DataAnnotations.DataType EmailAddress = 10 : Public, Static, Literal, HasDefault
+    System.ComponentModel.DataAnnotations.DataType Password = 11 : Public, Static, Literal, HasDefault
+    System.ComponentModel.DataAnnotations.DataType Url = 12 : Public, Static, Literal, HasDefault
+    System.ComponentModel.DataAnnotations.DataType ImageUrl = 13 : Public, Static, Literal, HasDefault
+    System.ComponentModel.DataAnnotations.DataType CreditCard = 14 : Public, Static, Literal, HasDefault
+    System.ComponentModel.DataAnnotations.DataType PostalCode = 15 : Public, Static, Literal, HasDefault
+    System.ComponentModel.DataAnnotations.DataType Upload = 16 : Public, Static, Literal, HasDefault
+Class System.ComponentModel.DataAnnotations.DisplayAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String ShortName 'get set' : 
+    System.String Name 'get set' : 
+    System.String Description 'get set' : 
+    System.String Prompt 'get set' : 
+    System.String GroupName 'get set' : 
+    System.Type ResourceType 'get set' : 
+    Boolean AutoGenerateField 'get set' : 
+    Boolean AutoGenerateFilter 'get set' : 
+    Int32 Order 'get set' : 
+  Methods:
+    get_ShortName(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShortName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    set_Name(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Description(): PrivateScope, Public, HideBySig, SpecialName
+    set_Description(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Prompt(): PrivateScope, Public, HideBySig, SpecialName
+    set_Prompt(String): PrivateScope, Public, HideBySig, SpecialName
+    get_GroupName(): PrivateScope, Public, HideBySig, SpecialName
+    set_GroupName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ResourceType(): PrivateScope, Public, HideBySig, SpecialName
+    set_ResourceType(Type): PrivateScope, Public, HideBySig, SpecialName
+    get_AutoGenerateField(): PrivateScope, Public, HideBySig, SpecialName
+    set_AutoGenerateField(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_AutoGenerateFilter(): PrivateScope, Public, HideBySig, SpecialName
+    set_AutoGenerateFilter(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_Order(): PrivateScope, Public, HideBySig, SpecialName
+    set_Order(Int32): PrivateScope, Public, HideBySig, SpecialName
+    GetShortName(): PrivateScope, Public, HideBySig
+    GetName(): PrivateScope, Public, HideBySig
+    GetDescription(): PrivateScope, Public, HideBySig
+    GetPrompt(): PrivateScope, Public, HideBySig
+    GetGroupName(): PrivateScope, Public, HideBySig
+    GetAutoGenerateField(): PrivateScope, Public, HideBySig
+    GetAutoGenerateFilter(): PrivateScope, Public, HideBySig
+    GetOrder(): PrivateScope, Public, HideBySig
+Class System.ComponentModel.DataAnnotations.DisplayColumnAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String DisplayColumn 'get set' : 
+    System.String SortColumn 'get set' : 
+    Boolean SortDescending 'get set' : 
+  Methods:
+    get_DisplayColumn(): PrivateScope, Public, HideBySig, SpecialName
+    get_SortColumn(): PrivateScope, Public, HideBySig, SpecialName
+    get_SortDescending(): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.DataAnnotations.DisplayFormatAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String DataFormatString 'get set' : 
+    System.String NullDisplayText 'get set' : 
+    Boolean ConvertEmptyStringToNull 'get set' : 
+    Boolean ApplyFormatInEditMode 'get set' : 
+    Boolean HtmlEncode 'get set' : 
+  Methods:
+    get_DataFormatString(): PrivateScope, Public, HideBySig, SpecialName
+    set_DataFormatString(String): PrivateScope, Public, HideBySig, SpecialName
+    get_NullDisplayText(): PrivateScope, Public, HideBySig, SpecialName
+    set_NullDisplayText(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ConvertEmptyStringToNull(): PrivateScope, Public, HideBySig, SpecialName
+    set_ConvertEmptyStringToNull(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_ApplyFormatInEditMode(): PrivateScope, Public, HideBySig, SpecialName
+    set_ApplyFormatInEditMode(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_HtmlEncode(): PrivateScope, Public, HideBySig, SpecialName
+    set_HtmlEncode(Boolean): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.DataAnnotations.EditableAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean AllowEdit 'get set' : 
+    Boolean AllowInitialValue 'get set' : 
+  Methods:
+    get_AllowEdit(): PrivateScope, Public, HideBySig, SpecialName
+    get_AllowInitialValue(): PrivateScope, Public, HideBySig, SpecialName
+    set_AllowInitialValue(Boolean): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.DataAnnotations.EmailAddressAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.ComponentModel.DataAnnotations.DataTypeAttribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    IsValid(Object): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.DataAnnotations.EnumDataTypeAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.ComponentModel.DataAnnotations.DataTypeAttribute
+    Void .ctor(System.Type): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Type EnumType 'get set' : 
+  Methods:
+    get_EnumType(): PrivateScope, Public, HideBySig, SpecialName
+    IsValid(Object): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.DataAnnotations.FileExtensionsAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.ComponentModel.DataAnnotations.DataTypeAttribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Extensions 'get set' : 
+  Methods:
+    get_Extensions(): PrivateScope, Public, HideBySig, SpecialName
+    set_Extensions(String): PrivateScope, Public, HideBySig, SpecialName
+    FormatErrorMessage(String): PrivateScope, Public, Virtual, HideBySig
+    IsValid(Object): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.DataAnnotations.FilterUIHintAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String, System.Object[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String FilterUIHint 'get ' : 
+    System.String PresentationLayer 'get ' : 
+    System.Collections.Generic.IDictionary`2[System.String,System.Object] ControlParameters 'get ' : 
+    System.Object TypeId 'get ' : 
+  Methods:
+    get_FilterUIHint(): PrivateScope, Public, HideBySig, SpecialName
+    get_PresentationLayer(): PrivateScope, Public, HideBySig, SpecialName
+    get_ControlParameters(): PrivateScope, Public, HideBySig, SpecialName
+    get_TypeId(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Name 'get ' : 
+  Methods:
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.DataAnnotations.Schema.InversePropertyAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Property 'get ' : 
+  Methods:
+    get_Property(): PrivateScope, Public, HideBySig, SpecialName
+Interface System.ComponentModel.DataAnnotations.IValidatableObject: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    Validate(ValidationContext): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class System.ComponentModel.DataAnnotations.KeyAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class System.ComponentModel.DataAnnotations.LocalizableString: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Value 'get set' : 
+    System.Type ResourceType 'get set' : 
+  Methods:
+    get_Value(): PrivateScope, Public, HideBySig, SpecialName
+    set_Value(String): PrivateScope, Public, HideBySig, SpecialName
+    get_ResourceType(): PrivateScope, Public, HideBySig, SpecialName
+    set_ResourceType(Type): PrivateScope, Public, HideBySig, SpecialName
+    GetLocalizableValue(): PrivateScope, Public, HideBySig
+Class System.ComponentModel.DataAnnotations.MaxLengthAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.DataAnnotations.ValidationAttribute
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 Length 'get set' : 
+  Methods:
+    get_Length(): PrivateScope, Public, HideBySig, SpecialName
+    IsValid(Object): PrivateScope, Public, Virtual, HideBySig
+    FormatErrorMessage(String): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.DataAnnotations.MetadataPropertyDescriptorWrapper: AutoLayout, AnsiClass, Class, BeforeFieldInit
+  :System.ComponentModel.PropertyDescriptor
+    Void .ctor(System.ComponentModel.PropertyDescriptor, System.Attribute[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Type ComponentType 'get ' : 
+    Boolean IsReadOnly 'get ' : 
+    System.Type PropertyType 'get ' : 
+    Boolean SupportsChangeEvents 'get ' : 
+  Methods:
+    AddValueChanged(Object, EventHandler): PrivateScope, Public, Virtual, HideBySig
+    CanResetValue(Object): PrivateScope, Public, Virtual, HideBySig
+    get_ComponentType(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetValue(Object): PrivateScope, Public, Virtual, HideBySig
+    get_IsReadOnly(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_PropertyType(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    RemoveValueChanged(Object, EventHandler): PrivateScope, Public, Virtual, HideBySig
+    ResetValue(Object): PrivateScope, Public, Virtual, HideBySig
+    SetValue(Object, Object): PrivateScope, Public, Virtual, HideBySig
+    ShouldSerializeValue(Object): PrivateScope, Public, Virtual, HideBySig
+    get_SupportsChangeEvents(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Class System.ComponentModel.DataAnnotations.MetadataTypeAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(System.Type): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Type MetadataClassType 'get ' : 
+  Methods:
+    get_MetadataClassType(): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.DataAnnotations.MinLengthAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.DataAnnotations.ValidationAttribute
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 Length 'get set' : 
+  Methods:
+    get_Length(): PrivateScope, Public, HideBySig, SpecialName
+    IsValid(Object): PrivateScope, Public, Virtual, HideBySig
+    FormatErrorMessage(String): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.DataAnnotations.Schema.NotMappedAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class System.ComponentModel.DataAnnotations.PhoneAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.ComponentModel.DataAnnotations.DataTypeAttribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    IsValid(Object): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.DataAnnotations.RangeAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.DataAnnotations.ValidationAttribute
+    Void .ctor(Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Type, System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Object Minimum 'get set' : 
+    System.Object Maximum 'get set' : 
+    System.Type OperandType 'get set' : 
+  Methods:
+    get_Minimum(): PrivateScope, Public, HideBySig, SpecialName
+    get_Maximum(): PrivateScope, Public, HideBySig, SpecialName
+    get_OperandType(): PrivateScope, Public, HideBySig, SpecialName
+    IsValid(Object): PrivateScope, Public, Virtual, HideBySig
+    FormatErrorMessage(String): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.DataAnnotations.RegularExpressionAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.DataAnnotations.ValidationAttribute
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Pattern 'get set' : 
+  Methods:
+    get_Pattern(): PrivateScope, Public, HideBySig, SpecialName
+    IsValid(Object): PrivateScope, Public, Virtual, HideBySig
+    FormatErrorMessage(String): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.DataAnnotations.RequiredAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.DataAnnotations.ValidationAttribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean AllowEmptyStrings 'get set' : 
+  Methods:
+    get_AllowEmptyStrings(): PrivateScope, Public, HideBySig, SpecialName
+    set_AllowEmptyStrings(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    IsValid(Object): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.DataAnnotations.ScaffoldColumnAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean Scaffold 'get set' : 
+  Methods:
+    get_Scaffold(): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.DataAnnotations.ScaffoldTableAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean Scaffold 'get set' : 
+  Methods:
+    get_Scaffold(): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.DataAnnotations.StringLengthAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.ComponentModel.DataAnnotations.ValidationAttribute
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 MaximumLength 'get set' : 
+    Int32 MinimumLength 'get set' : 
+  Methods:
+    get_MaximumLength(): PrivateScope, Public, HideBySig, SpecialName
+    get_MinimumLength(): PrivateScope, Public, HideBySig, SpecialName
+    set_MinimumLength(Int32): PrivateScope, Public, HideBySig, SpecialName
+    IsValid(Object): PrivateScope, Public, Virtual, HideBySig
+    FormatErrorMessage(String): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.DataAnnotations.Schema.TableAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String Name 'get ' : 
+    System.String Schema 'get set' : 
+  Methods:
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    get_Schema(): PrivateScope, Public, HideBySig, SpecialName
+    set_Schema(String): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.DataAnnotations.TimestampAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class System.ComponentModel.DataAnnotations.UIHintAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Attribute
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.String, System.Object[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String UIHint 'get ' : 
+    System.String PresentationLayer 'get ' : 
+    System.Collections.Generic.IDictionary`2[System.String,System.Object] ControlParameters 'get ' : 
+    System.Object TypeId 'get ' : 
+  Methods:
+    get_UIHint(): PrivateScope, Public, HideBySig, SpecialName
+    get_PresentationLayer(): PrivateScope, Public, HideBySig, SpecialName
+    get_ControlParameters(): PrivateScope, Public, HideBySig, SpecialName
+    get_TypeId(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.DataAnnotations.UIHintAttribute+UIHintImplementation: AutoLayout, AnsiClass, Class, NestedAssembly, BeforeFieldInit
+    Void .ctor(System.String, System.String, System.Object[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String UIHint 'get set' : 
+    System.String PresentationLayer 'get set' : 
+    System.Collections.Generic.IDictionary`2[System.String,System.Object] ControlParameters 'get ' : 
+  Methods:
+    get_UIHint(): PrivateScope, Public, HideBySig, SpecialName
+    get_PresentationLayer(): PrivateScope, Public, HideBySig, SpecialName
+    get_ControlParameters(): PrivateScope, Public, HideBySig, SpecialName
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.DataAnnotations.UrlAttribute: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.ComponentModel.DataAnnotations.DataTypeAttribute
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    IsValid(Object): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.DataAnnotations.Validator: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    TryValidateProperty(Object, ValidationContext, ICollection`1): PrivateScope, Public, Static, HideBySig
+    TryValidateObject(Object, ValidationContext, ICollection`1): PrivateScope, Public, Static, HideBySig
+    TryValidateObject(Object, ValidationContext, ICollection`1, Boolean): PrivateScope, Public, Static, HideBySig
+    TryValidateValue(Object, ValidationContext, ICollection`1, IEnumerable`1): PrivateScope, Public, Static, HideBySig
+    ValidateProperty(Object, ValidationContext): PrivateScope, Public, Static, HideBySig
+    ValidateObject(Object, ValidationContext): PrivateScope, Public, Static, HideBySig
+    ValidateObject(Object, ValidationContext, Boolean): PrivateScope, Public, Static, HideBySig
+    ValidateValue(Object, ValidationContext, IEnumerable`1): PrivateScope, Public, Static, HideBySig
+    CreateValidationContext(Object, ValidationContext): PrivateScope, Assembly, Static, HideBySig
+Class System.ComponentModel.DataAnnotations.ValidationAttributeStore: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.ComponentModel.DataAnnotations.ValidationAttributeStore Instance 'get ' : 
+  Methods:
+    get_Instance(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    GetTypeValidationAttributes(ValidationContext): PrivateScope, Assembly, HideBySig
+    GetTypeDisplayAttribute(ValidationContext): PrivateScope, Assembly, HideBySig
+    GetPropertyValidationAttributes(ValidationContext): PrivateScope, Assembly, HideBySig
+    GetPropertyDisplayAttribute(ValidationContext): PrivateScope, Assembly, HideBySig
+    GetPropertyType(ValidationContext): PrivateScope, Assembly, HideBySig
+    IsPropertyContext(ValidationContext): PrivateScope, Assembly, HideBySig
+Class System.ComponentModel.DataAnnotations.ValidationException: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :System.Exception
+    Void .ctor(System.ComponentModel.DataAnnotations.ValidationResult, System.ComponentModel.DataAnnotations.ValidationAttribute, System.Object): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.ComponentModel.DataAnnotations.ValidationAttribute, System.Object): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Exception): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.ComponentModel.DataAnnotations.ValidationAttribute ValidationAttribute 'get set' : 
+    System.ComponentModel.DataAnnotations.ValidationResult ValidationResult 'get ' : 
+    System.Object Value 'get set' : 
+  Methods:
+    get_ValidationAttribute(): PrivateScope, Public, HideBySig, SpecialName
+    get_ValidationResult(): PrivateScope, Public, HideBySig, SpecialName
+    get_Value(): PrivateScope, Public, HideBySig, SpecialName
+Class System.ComponentModel.DataAnnotations.ValidationResult: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Collections.Generic.IEnumerable`1[System.String]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.ComponentModel.DataAnnotations.ValidationResult Success : Public, Static, InitOnly
+  Properties:
+    System.Collections.Generic.IEnumerable`1[System.String] MemberNames 'get ' : 
+    System.String ErrorMessage 'get set' : 
+  Methods:
+    get_MemberNames(): PrivateScope, Public, HideBySig, SpecialName
+    get_ErrorMessage(): PrivateScope, Public, HideBySig, SpecialName
+    set_ErrorMessage(String): PrivateScope, Public, HideBySig, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Class System.ComponentModel.DataAnnotations.Resources.DataAnnotationsResources: AutoLayout, AnsiClass, Class, BeforeFieldInit
+    Void .ctor(): PrivateScope, Assembly, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Resources.ResourceManager ResourceManager 'get ' : 
+    System.Globalization.CultureInfo Culture 'get set' : 
+    System.String ArgumentIsNullOrWhitespace 'get ' : 
+    System.String AssociatedMetadataTypeTypeDescriptor_MetadataTypeContainsUnknownProperties 'get ' : 
+    System.String AttributeStore_Type_Must_Be_Public 'get ' : 
+    System.String AttributeStore_Unknown_Method 'get ' : 
+    System.String AttributeStore_Unknown_Property 'get ' : 
+    System.String Common_NullOrEmpty 'get ' : 
+    System.String Common_PropertyNotFound 'get ' : 
+    System.String CompareAttribute_MustMatch 'get ' : 
+    System.String CompareAttribute_UnknownProperty 'get ' : 
+    System.String CreditCardAttribute_Invalid 'get ' : 
+    System.String CustomValidationAttribute_Method_Must_Return_ValidationResult 'get ' : 
+    System.String CustomValidationAttribute_Method_Not_Found 'get ' : 
+    System.String CustomValidationAttribute_Method_Required 'get ' : 
+    System.String CustomValidationAttribute_Method_Signature 'get ' : 
+    System.String CustomValidationAttribute_Type_Conversion_Failed 'get ' : 
+    System.String CustomValidationAttribute_Type_Must_Be_Public 'get ' : 
+    System.String CustomValidationAttribute_ValidationError 'get ' : 
+    System.String CustomValidationAttribute_ValidatorType_Required 'get ' : 
+    System.String DataTypeAttribute_EmptyDataTypeString 'get ' : 
+    System.String DisplayAttribute_PropertyNotSet 'get ' : 
+    System.String EmailAddressAttribute_Invalid 'get ' : 
+    System.String EnumDataTypeAttribute_TypeCannotBeNull 'get ' : 
+    System.String EnumDataTypeAttribute_TypeNeedsToBeAnEnum 'get ' : 
+    System.String FileExtensionsAttribute_Invalid 'get ' : 
+    System.String LocalizableString_LocalizationFailed 'get ' : 
+    System.String MaxLengthAttribute_InvalidMaxLength 'get ' : 
+    System.String MaxLengthAttribute_ValidationError 'get ' : 
+    System.String MetadataTypeAttribute_TypeCannotBeNull 'get ' : 
+    System.String MinLengthAttribute_InvalidMinLength 'get ' : 
+    System.String MinLengthAttribute_ValidationError 'get ' : 
+    System.String PhoneAttribute_Invalid 'get ' : 
+    System.String RangeAttribute_ArbitraryTypeNotIComparable 'get ' : 
+    System.String RangeAttribute_MinGreaterThanMax 'get ' : 
+    System.String RangeAttribute_Must_Set_Min_And_Max 'get ' : 
+    System.String RangeAttribute_Must_Set_Operand_Type 'get ' : 
+    System.String RangeAttribute_ValidationError 'get ' : 
+    System.String RegexAttribute_ValidationError 'get ' : 
+    System.String RegularExpressionAttribute_Empty_Pattern 'get ' : 
+    System.String RequiredAttribute_ValidationError 'get ' : 
+    System.String StringLengthAttribute_InvalidMaxLength 'get ' : 
+    System.String StringLengthAttribute_ValidationError 'get ' : 
+    System.String StringLengthAttribute_ValidationErrorIncludingMinimum 'get ' : 
+    System.String UIHintImplementation_ControlParameterKeyIsNotAString 'get ' : 
+    System.String UIHintImplementation_ControlParameterKeyIsNull 'get ' : 
+    System.String UIHintImplementation_ControlParameterKeyOccursMoreThanOnce 'get ' : 
+    System.String UIHintImplementation_NeedEvenNumberOfControlParameters 'get ' : 
+    System.String UrlAttribute_Invalid 'get ' : 
+    System.String ValidationAttribute_Cannot_Set_ErrorMessage_And_Resource 'get ' : 
+    System.String ValidationAttribute_IsValid_NotImplemented 'get ' : 
+    System.String ValidationAttribute_NeedBothResourceTypeAndResourceName 'get ' : 
+    System.String ValidationAttribute_ResourcePropertyNotStringType 'get ' : 
+    System.String ValidationAttribute_ResourceTypeDoesNotHaveProperty 'get ' : 
+    System.String ValidationAttribute_ValidationError 'get ' : 
+    System.String ValidationContext_Must_Be_Method 'get ' : 
+    System.String ValidationContextServiceContainer_ItemAlreadyExists 'get ' : 
+    System.String Validator_InstanceMustMatchValidationContextInstance 'get ' : 
+    System.String Validator_Property_Value_Wrong_Type 'get ' : 
+  Methods:
+    get_ResourceManager(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Culture(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    set_Culture(CultureInfo): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ArgumentIsNullOrWhitespace(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_AssociatedMetadataTypeTypeDescriptor_MetadataTypeContainsUnknownProperties(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_AttributeStore_Type_Must_Be_Public(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_AttributeStore_Unknown_Method(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_AttributeStore_Unknown_Property(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Common_NullOrEmpty(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Common_PropertyNotFound(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_CompareAttribute_MustMatch(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_CompareAttribute_UnknownProperty(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_CreditCardAttribute_Invalid(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_CustomValidationAttribute_Method_Must_Return_ValidationResult(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_CustomValidationAttribute_Method_Not_Found(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_CustomValidationAttribute_Method_Required(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_CustomValidationAttribute_Method_Signature(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_CustomValidationAttribute_Type_Conversion_Failed(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_CustomValidationAttribute_Type_Must_Be_Public(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_CustomValidationAttribute_ValidationError(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_CustomValidationAttribute_ValidatorType_Required(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_DataTypeAttribute_EmptyDataTypeString(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_DisplayAttribute_PropertyNotSet(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_EmailAddressAttribute_Invalid(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_EnumDataTypeAttribute_TypeCannotBeNull(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_EnumDataTypeAttribute_TypeNeedsToBeAnEnum(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_FileExtensionsAttribute_Invalid(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_LocalizableString_LocalizationFailed(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_MaxLengthAttribute_InvalidMaxLength(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_MaxLengthAttribute_ValidationError(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_MetadataTypeAttribute_TypeCannotBeNull(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_MinLengthAttribute_InvalidMinLength(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_MinLengthAttribute_ValidationError(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_PhoneAttribute_Invalid(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_RangeAttribute_ArbitraryTypeNotIComparable(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_RangeAttribute_MinGreaterThanMax(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_RangeAttribute_Must_Set_Min_And_Max(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_RangeAttribute_Must_Set_Operand_Type(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_RangeAttribute_ValidationError(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_RegexAttribute_ValidationError(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_RegularExpressionAttribute_Empty_Pattern(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_RequiredAttribute_ValidationError(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_StringLengthAttribute_InvalidMaxLength(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_StringLengthAttribute_ValidationError(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_StringLengthAttribute_ValidationErrorIncludingMinimum(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_UIHintImplementation_ControlParameterKeyIsNotAString(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_UIHintImplementation_ControlParameterKeyIsNull(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_UIHintImplementation_ControlParameterKeyOccursMoreThanOnce(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_UIHintImplementation_NeedEvenNumberOfControlParameters(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_UrlAttribute_Invalid(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ValidationAttribute_Cannot_Set_ErrorMessage_And_Resource(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ValidationAttribute_IsValid_NotImplemented(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ValidationAttribute_NeedBothResourceTypeAndResourceName(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ValidationAttribute_ResourcePropertyNotStringType(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ValidationAttribute_ResourceTypeDoesNotHaveProperty(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ValidationAttribute_ValidationError(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ValidationContext_Must_Be_Method(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_ValidationContextServiceContainer_ItemAlreadyExists(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Validator_InstanceMustMatchValidationContextInstance(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+    get_Validator_Property_Value_Wrong_Type(): PrivateScope, Assembly, Static, HideBySig, SpecialName
+Class System.ComponentModel.DataAnnotations.ValidationContext: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(System.Object): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Object, System.Collections.Generic.IDictionary`2[System.Object,System.Object]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Object, System.IServiceProvider, System.Collections.Generic.IDictionary`2[System.Object,System.Object]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IServiceProvider
+  Properties:
+    System.Object ObjectInstance 'get ' : 
+    System.Type ObjectType 'get ' : 
+    System.String DisplayName 'get set' : 
+    System.String MemberName 'get set' : 
+    System.Collections.Generic.IDictionary`2[System.Object,System.Object] Items 'get ' : 
+    System.ComponentModel.Design.IServiceContainer ServiceContainer 'get ' : 
+  Methods:
+    get_ObjectInstance(): PrivateScope, Public, HideBySig, SpecialName
+    get_ObjectType(): PrivateScope, Public, HideBySig, SpecialName
+    get_DisplayName(): PrivateScope, Public, HideBySig, SpecialName
+    set_DisplayName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_MemberName(): PrivateScope, Public, HideBySig, SpecialName
+    set_MemberName(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Items(): PrivateScope, Public, HideBySig, SpecialName
+    InitializeServiceProvider(Func`2): PrivateScope, Public, HideBySig
+    GetService(Type): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_ServiceContainer(): PrivateScope, Public, HideBySig, SpecialName
+Class FXAssembly: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    System.String Version = 4.0.0.0 : Assembly, Static, Literal, HasDefault
+Class ThisAssembly: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    System.String Title = System.ComponentModel.DataAnnotations.dll : Assembly, Static, Literal, HasDefault
+    System.String Description = System.ComponentModel.DataAnnotations.dll : Assembly, Static, Literal, HasDefault
+    System.String DefaultAlias = System.ComponentModel.DataAnnotations.dll : Assembly, Static, Literal, HasDefault
+    System.String Copyright = © Microsoft Corporation.  All rights reserved. : Assembly, Static, Literal, HasDefault
+    System.String Version = 4.0.0.0 : Assembly, Static, Literal, HasDefault
+    System.String InformationalVersion = 4.0.30319.34211 : Assembly, Static, Literal, HasDefault
+    System.String DailyBuildNumberStr = 30319 : Assembly, Static, Literal, HasDefault
+    System.String BuildRevisionStr = 34211 : Assembly, Static, Literal, HasDefault
+    Int32 DailyBuildNumber = 30319 : Assembly, Static, Literal, HasDefault
+Class AssemblyRef: AutoLayout, AnsiClass, Class, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    System.String EcmaPublicKey = b77a5c561934e089 : Assembly, Static, Literal, HasDefault
+    System.String EcmaPublicKeyToken = b77a5c561934e089 : Assembly, Static, Literal, HasDefault
+    System.String EcmaPublicKeyFull = 00000000000000000400000000000000 : Assembly, Static, Literal, HasDefault
+    System.String SilverlightPublicKey = 31bf3856ad364e35 : Assembly, Static, Literal, HasDefault
+    System.String SilverlightPublicKeyToken = 31bf3856ad364e35 : Assembly, Static, Literal, HasDefault
+    System.String SilverlightPublicKeyFull = 0024000004800000940000000602000000240000525341310004000001000100B5FC90E7027F67871E773A8FDE8938C81DD402BA65B9201D60593E96C492651E889CC13F1415EBB53FAC1131AE0BD333C5EE6021672D9718EA31A8AEBD0DA0072F25D87DBA6FC90FFD598ED4DA35E44C398C454307E8E33B8426143DAEC9F596836F97C8F74750E5975C64E2189F45DEF46B2A2B1247ADC3652BF5C308055DA9 : Assembly, Static, Literal, HasDefault
+    System.String SilverlightPlatformPublicKey = 7cec85d7bea7798e : Assembly, Static, Literal, HasDefault
+    System.String SilverlightPlatformPublicKeyToken = 7cec85d7bea7798e : Assembly, Static, Literal, HasDefault
+    System.String SilverlightPlatformPublicKeyFull = 00240000048000009400000006020000002400005253413100040000010001008D56C76F9E8649383049F383C44BE0EC204181822A6C31CF5EB7EF486944D032188EA1D3920763712CCB12D75FB77E9811149E6148E5D32FBAAB37611C1878DDC19E20EF135D0CB2CFF2BFEC3D115810C3D9069638FE4BE215DBF795861920E5AB6F7DB2E2CEEF136AC23D5DD2BF031700AEC232F6C6B1C785B4305C123B37AB : Assembly, Static, Literal, HasDefault
+    System.String PlatformPublicKey = b77a5c561934e089 : Assembly, Static, Literal, HasDefault
+    System.String PlatformPublicKeyToken = b77a5c561934e089 : Assembly, Static, Literal, HasDefault
+    System.String PlatformPublicKeyFull = 00000000000000000400000000000000 : Assembly, Static, Literal, HasDefault
+    System.String Mscorlib = mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 : Assembly, Static, Literal, HasDefault
+    System.String SystemData = System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 : Assembly, Static, Literal, HasDefault
+    System.String SystemDataOracleClient = System.Data.OracleClient, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 : Assembly, Static, Literal, HasDefault
+    System.String System = System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 : Assembly, Static, Literal, HasDefault
+    System.String SystemCore = System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 : Assembly, Static, Literal, HasDefault
+    System.String SystemNumerics = System.Numerics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 : Assembly, Static, Literal, HasDefault
+    System.String SystemRuntimeRemoting = System.Runtime.Remoting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 : Assembly, Static, Literal, HasDefault
+    System.String SystemThreadingTasksDataflow = System.Threading.Tasks.Dataflow, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 : Assembly, Static, Literal, HasDefault
+    System.String SystemWindowsForms = System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 : Assembly, Static, Literal, HasDefault
+    System.String SystemXml = System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 : Assembly, Static, Literal, HasDefault
+    System.String MicrosoftPublicKey = b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String MicrosoftPublicKeyToken = b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String MicrosoftPublicKeyFull = 002400000480000094000000060200000024000052534131000400000100010007D1FA57C4AED9F0A32E84AA0FAEFD0DE9E8FD6AEC8F87FB03766C834C99921EB23BE79AD9D5DCC1DD9AD236132102900B723CF980957FC4E177108FC607774F29E8320E92EA05ECE4E821C0A5EFE8F1645C4C0C93C1AB99285D622CAA652C1DFAD63D745D6F2DE5F17E5EAF0FC4963D261C8A12436518206DC093344D5AD293 : Assembly, Static, Literal, HasDefault
+    System.String SharedLibPublicKey = 31bf3856ad364e35 : Assembly, Static, Literal, HasDefault
+    System.String SharedLibPublicKeyToken = 31bf3856ad364e35 : Assembly, Static, Literal, HasDefault
+    System.String SharedLibPublicKeyFull = 0024000004800000940000000602000000240000525341310004000001000100B5FC90E7027F67871E773A8FDE8938C81DD402BA65B9201D60593E96C492651E889CC13F1415EBB53FAC1131AE0BD333C5EE6021672D9718EA31A8AEBD0DA0072F25D87DBA6FC90FFD598ED4DA35E44C398C454307E8E33B8426143DAEC9F596836F97C8F74750E5975C64E2189F45DEF46B2A2B1247ADC3652BF5C308055DA9 : Assembly, Static, Literal, HasDefault
+    System.String SystemComponentModelDataAnnotations = System.ComponentModel.DataAnnotations, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 : Assembly, Static, Literal, HasDefault
+    System.String SystemConfiguration = System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String SystemConfigurationInstall = System.Configuration.Install, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String SystemDeployment = System.Deployment, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String SystemDesign = System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String SystemDirectoryServices = System.DirectoryServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String SystemDrawingDesign = System.Drawing.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String SystemDrawing = System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String SystemEnterpriseServices = System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String SystemManagement = System.Management, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String SystemMessaging = System.Messaging, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String SystemNetHttp = System.Net.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String SystemNetHttpWebRequest = System.Net.Http.WebRequest, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String SystemRuntimeSerializationFormattersSoap = System.Runtime.Serialization.Formatters.Soap, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String SystemRuntimeWindowsRuntime = System.Runtime.WindowsRuntime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 : Assembly, Static, Literal, HasDefault
+    System.String SystemRuntimeWindowsRuntimeUIXaml = System.Runtime.WindowsRuntimeUIXaml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 : Assembly, Static, Literal, HasDefault
+    System.String SystemSecurity = System.Security, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String SystemServiceModelWeb = System.ServiceModel.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 : Assembly, Static, Literal, HasDefault
+    System.String SystemServiceProcess = System.ServiceProcess, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String SystemWeb = System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String SystemWebAbstractions = System.Web.Abstractions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 : Assembly, Static, Literal, HasDefault
+    System.String SystemWebDynamicData = System.Web.DynamicData, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 : Assembly, Static, Literal, HasDefault
+    System.String SystemWebDynamicDataDesign = System.Web.DynamicData.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 : Assembly, Static, Literal, HasDefault
+    System.String SystemWebEntityDesign = System.Web.Entity.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089 : Assembly, Static, Literal, HasDefault
+    System.String SystemWebExtensions = System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 : Assembly, Static, Literal, HasDefault
+    System.String SystemWebExtensionsDesign = System.Web.Extensions.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 : Assembly, Static, Literal, HasDefault
+    System.String SystemWebMobile = System.Web.Mobile, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String SystemWebRegularExpressions = System.Web.RegularExpressions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String SystemWebRouting = System.Web.Routing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 : Assembly, Static, Literal, HasDefault
+    System.String SystemWebServices = System.Web.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String WindowsBase = WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35 : Assembly, Static, Literal, HasDefault
+    System.String MicrosoftVisualStudio = Microsoft.VisualStudio, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String MicrosoftVisualStudioWindowsForms = Microsoft.VisualStudio.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String VJSharpCodeProvider = VJSharpCodeProvider, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String ASPBrowserCapsPublicKey = b7bd7678b977bd8f : Assembly, Static, Literal, HasDefault
+    System.String ASPBrowserCapsFactory = ASP.BrowserCapsFactory, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b7bd7678b977bd8f : Assembly, Static, Literal, HasDefault
+    System.String MicrosoftVSDesigner = Microsoft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String MicrosoftVisualStudioWeb = Microsoft.VisualStudio.Web, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String MicrosoftWebDesign = Microsoft.Web.Design.Client, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String MicrosoftVSDesignerMobile = Microsoft.VSDesigner.Mobile, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault
+    System.String MicrosoftJScript = Microsoft.JScript, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a : Assembly, Static, Literal, HasDefault

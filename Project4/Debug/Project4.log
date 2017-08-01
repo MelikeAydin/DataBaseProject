@@ -1,0 +1,124 @@
+﻿C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1820,5): warning MSB3245: Could not resolve this reference. Could not locate the assembly "MySql.Data, Version=6.8.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d". Check to make sure the assembly exists on disk. If this reference is required by your code, you may get compilation errors.
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.MetaGen.targets(91,5): warning : Required file "C:\PROGRAM FILES (X86)\MYSQL\MYSQL CONNECTOR NET 6.8.8\ASSEMBLIES\V4.5\MYSQL.DATA.DLL" is missing.
+  MyForm.cpp
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(11): error C2653: 'MySql': is not a class or namespace name
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(11): error C2871: 'MySqlClient': a namespace with this name does not exist
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(721): error C2065: 'MySqlConnection': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(721): error C2065: 'baglanti': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(721): error C2061: syntax error: identifier 'MySqlConnection'
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(722): error C2065: 'baglanti': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(722): error C2227: left of '->Open' must point to class/struct/union/generic type
+  c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(722): note: type is 'unknown-type'
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(729): error C2065: 'MySqlCommand': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(729): error C2065: 'yeni': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(729): error C2061: syntax error: identifier 'MySqlCommand'
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(730): error C2065: 'MySqlDataReader': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(730): error C2065: 'myReader': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(731): error C2065: 'myReader': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(731): error C2065: 'yeni': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(731): error C2227: left of '->ExecuteReader' must point to class/struct/union/generic type
+  c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(731): note: type is 'unknown-type'
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(738): error C2065: 'MySqlConnection': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(738): error C2065: 'baglanti': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(738): error C2061: syntax error: identifier 'MySqlConnection'
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(739): error C2065: 'baglanti': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(739): error C2227: left of '->Open' must point to class/struct/union/generic type
+  c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(739): note: type is 'unknown-type'
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(747): error C2065: 'MySqlCommand': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(747): error C2065: 'yeni': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(747): error C2061: syntax error: identifier 'MySqlCommand'
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(748): error C2065: 'MySqlDataAdapter': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(748): error C2065: 'sda': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(748): error C2061: syntax error: identifier 'MySqlDataAdapter'
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(749): error C2065: 'sda': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(749): error C2227: left of '->SelectCommand' must point to class/struct/union/generic type
+  c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(749): note: type is 'unknown-type'
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(749): error C2065: 'yeni': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(751): error C2065: 'sda': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(751): error C2227: left of '->Fill' must point to class/struct/union/generic type
+  c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(751): note: type is 'unknown-type'
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(755): error C2065: 'sda': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(755): error C2227: left of '->Update' must point to class/struct/union/generic type
+  c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(755): note: type is 'unknown-type'
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(760): error C2065: 'MySqlConnection': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(760): error C2065: 'baglanti': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(760): error C2061: syntax error: identifier 'MySqlConnection'
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(761): error C2065: 'baglanti': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(761): error C2227: left of '->Open' must point to class/struct/union/generic type
+  c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(761): note: type is 'unknown-type'
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(769): error C2065: 'MySqlCommand': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(769): error C2065: 'yeni': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(769): error C2061: syntax error: identifier 'MySqlCommand'
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(770): error C2065: 'MySqlDataReader': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(770): error C2065: 'myReader': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(771): error C2065: 'myReader': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(771): error C2065: 'yeni': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(771): error C2227: left of '->ExecuteReader' must point to class/struct/union/generic type
+  c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(771): note: type is 'unknown-type'
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(777): error C2065: 'MySqlConnection': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(777): error C2065: 'baglanti': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(777): error C2061: syntax error: identifier 'MySqlConnection'
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(778): error C2065: 'baglanti': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(778): error C2227: left of '->Open' must point to class/struct/union/generic type
+  c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(778): note: type is 'unknown-type'
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(788): error C2065: 'MySqlCommand': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(788): error C2065: 'yeni': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(788): error C2061: syntax error: identifier 'MySqlCommand'
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(789): error C2065: 'MySqlDataAdapter': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(789): error C2065: 'sda': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(789): error C2061: syntax error: identifier 'MySqlDataAdapter'
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(790): error C2065: 'sda': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(790): error C2227: left of '->SelectCommand' must point to class/struct/union/generic type
+  c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(790): note: type is 'unknown-type'
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(790): error C2065: 'yeni': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(792): error C2065: 'sda': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(792): error C2227: left of '->Fill' must point to class/struct/union/generic type
+  c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(792): note: type is 'unknown-type'
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(796): error C2065: 'sda': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(796): error C2227: left of '->Update' must point to class/struct/union/generic type
+  c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(796): note: type is 'unknown-type'
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(802): error C2065: 'MySqlConnection': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(802): error C2065: 'baglanti': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(802): error C2061: syntax error: identifier 'MySqlConnection'
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(803): error C2065: 'baglanti': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(803): error C2227: left of '->Open' must point to class/struct/union/generic type
+  c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(803): note: type is 'unknown-type'
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(810): error C2065: 'MySqlCommand': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(810): error C2065: 'yeni': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(810): error C2061: syntax error: identifier 'MySqlCommand'
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(811): error C2065: 'MySqlDataAdapter': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(811): error C2065: 'sda': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(811): error C2061: syntax error: identifier 'MySqlDataAdapter'
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(812): error C2065: 'sda': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(812): error C2227: left of '->SelectCommand' must point to class/struct/union/generic type
+  c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(812): note: type is 'unknown-type'
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(812): error C2065: 'yeni': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(814): error C2065: 'sda': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(814): error C2227: left of '->Fill' must point to class/struct/union/generic type
+  c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(814): note: type is 'unknown-type'
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(818): error C2065: 'sda': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(818): error C2227: left of '->Update' must point to class/struct/union/generic type
+  c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(818): note: type is 'unknown-type'
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(845): error C2065: 'MySqlConnection': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(845): error C2065: 'baglanti': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(845): error C2061: syntax error: identifier 'MySqlConnection'
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(846): error C2065: 'baglanti': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(846): error C2227: left of '->Open' must point to class/struct/union/generic type
+  c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(846): note: type is 'unknown-type'
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(847): error C2065: 'MySqlCommand': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(847): error C2065: 'yeni': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(847): error C2061: syntax error: identifier 'MySqlCommand'
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(848): error C2065: 'MySqlDataReader': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(848): error C2065: 'myReader': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(849): error C2065: 'myReader': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(849): error C2065: 'yeni': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(849): error C2227: left of '->ExecuteReader' must point to class/struct/union/generic type
+  c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(849): note: type is 'unknown-type'
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(854): error C2065: 'MySqlConnection': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(854): error C2065: 'baglanti': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(854): error C2061: syntax error: identifier 'MySqlConnection'
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(855): error C2065: 'baglanti': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(855): error C2227: left of '->Open' must point to class/struct/union/generic type
+  c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(855): note: type is 'unknown-type'
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(862): error C2065: 'MySqlCommand': undeclared identifier
+c:\users\merve\desktop\ceng\4.yariyil\programlama laboratuvarı ii\150202091\project4\MyForm.h(862): fatal error C1003: error count exceeds 100; stopping compilation
